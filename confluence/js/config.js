@@ -85,11 +85,11 @@ BgConfig = {
 RuleConfig = function(id){
   this.id = id;
   this.defaults = {
-    test_url : 'https://issues.apache.org/jira/browse/HADOOP-3629',
-    test_title : '[HADOOP-3629] Document the metrics produced by hadoop - JIRA',
-    url_pattern : '(jira|tickets)*/browse/',
-    title_pattern : '^\\[#?([^\\]]+)\\](.*)( -[^-]+)$',
-    out_pattern : '$html:<a href="$url">$1:$2</a>'
+    test_url : 'http://bktb-dev-jira.bankerstoolbox.com/confluence/display/JTP/BKTB+Products',
+    test_title : 'BKTB Products',
+    url_pattern : '(confluence|tickets)*/display/',
+    title_pattern : '^(.*)( -[^-]+)$',
+    out_pattern : '$html:<a href="$url">$1</a>'
   }
   this.fields = {};
 
